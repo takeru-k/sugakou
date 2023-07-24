@@ -1,0 +1,89 @@
+@use "../setting/setting";
+
+.c-related{/* 関連記事のスタイリング */
+  
+  span{
+    font-size: 12px;
+    background-color: #eaeaea;
+    color: #808080;
+    padding: 2px 12px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 8px;
+  }
+  h2{
+    border-left: 4px solid setting.$color-main;
+    font-size: 18px;
+    padding-left: 16px;
+  }
+
+  ul{
+    margin-top: 20px;
+  }
+
+  li{
+    margin-bottom: 24px;
+    background: #fff;
+    padding: 16px 20px;
+    border: 1px solid #f1f2f4;
+  }
+
+
+  
+
+  h3{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p{
+    margin: 8px 0;
+    font-size: 14px;
+  }
+
+  time{
+    font-size: 14px;
+  }
+
+  
+}
+
+
+@media (min-width: 768px){
+  .c-related{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    li{
+      width: 49%;
+    }
+  }
+}
+
+@media not all and (min-width: 768px){
+  .c-related{
+    li{
+      border-bottom: 1px solid #ddd;
+
+      &:not(:first-child){
+        padding-top: 28px;
+      }
+    }
+    
+  }
+}

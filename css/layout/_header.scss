@@ -1,0 +1,172 @@
+@use "../setting/setting";
+
+.l-header__logos{
+  display: flex;
+  z-index: 100;
+  position: absolute;
+}
+
+.l-header__logo{
+  width: 96px;
+  height: 96px;
+
+  img{
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+  }
+}
+
+
+.l-header {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.l-header__menu{
+  li{
+    text-transform: uppercase;
+  }
+}
+
+
+@media not all and (min-width: 1024px) {
+  /* メニューのスタイリング */
+
+  .l-header__nav {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+ transition: .5s;
+  padding-top: 80px;
+  z-index: 99;
+}
+
+body .open{
+background: #fff;
+}
+
+  .l-header__menu {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 16px 24px;
+      border-bottom: 1px solid #dadada;
+      letter-spacing: 0.1em;
+      position: relative;
+    }
+
+    a {
+      position: relative;
+      padding-right: 24px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url(../images/icon/icon-arrow.svg) no-repeat center
+          center/cover;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        color: setting.$color-main;
+      }
+    }
+  }
+
+  .l-header__nav.open {
+    position: absolute;
+    right: 0; /* メニューオープン時位置0にして画面内に */
+    z-index: 99;
+    top: 0;
+    padding-top: 96px;
+    visibility: visible;
+    opacity: 1;
+   transition: ease .5s;
+  }  
+}
+
+
+
+/* 1024px以上のスタイリング */
+@media (min-width: 1024px){
+  .l-header{
+    height: auto;
+    width: 100%;
+  }
+
+
+  .l-header__logo{
+    width: 120px;
+    height: 120px;
+
+    img{
+      height: 120px;
+      width: 100%;
+    }
+  }
+
+  .l-header__nav {
+    display: flex;
+    position: static;
+    justify-content: flex-end;
+    height: 88px;
+  }
+
+  .l-header__menu {
+    /* メニューを横に */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    height: 90px;
+
+    li {
+      height: 100%;
+      margin-right: 36px;
+      border-bottom: none;
+      font-size: 14px;
+      font-weight: bold;
+
+      &:hover{
+        color: setting.$color-main;
+      }
+
+      a{
+        height: 90px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .l-header__hour{
+    font-size: 12px;
+  }
+}
+
+.current-menu-item {
+  color: setting.$color-main;
+
+  a{
+    padding-bottom: 8px;
+    border-bottom: 1px solid setting.$color-main;
+  }
+  
+}

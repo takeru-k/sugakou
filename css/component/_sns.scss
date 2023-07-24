@@ -1,0 +1,36 @@
+@use "../setting/setting";
+
+.c-sns{
+  padding: 20px 0 36px;
+}
+
+.c-sns__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-sns__item{
+  width: 48%;
+  padding-top: 20px;
+  transition: .4s;
+
+  p{
+    font-size: 12px;
+    padding: 6px 0 0 2px;
+    line-height: 1.5;
+  }
+
+  &:hover{
+    opacity: .6;
+  }
+}
+
+@media (min-width: 768px){
+  .c-sns{
+    padding: 40px 0;
+  }
+  .c-sns__item{
+    width: 22%;
+  }
+}

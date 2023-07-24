@@ -1,0 +1,61 @@
+@use "../setting/setting";
+
+.p-topics{
+  padding: 40px 0;
+  border-bottom: 1px solid #dadada;
+}
+
+  .p-topics__contents{
+    margin-bottom: 16px;
+  }
+
+.p-topics__texts{
+  span{
+    color: setting.$color-main;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: setting.$font-en;
+    letter-spacing: 1px;
+  }
+
+  h2{
+    font-size: 20px;
+    padding-top: 4px;
+  }
+
+  p{
+    padding-top: 8px;
+  }
+
+  ul{
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 768px){
+  .p-topics__body{
+    display: flex;
+    position: relative;
+  }
+
+  .p-topics__img{
+    width: 40%;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .p-topics__contents{
+    width: 55%;
+    padding: 40px 0 0 48px;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-topics{
+    padding: 64px 0;
+  }
+}

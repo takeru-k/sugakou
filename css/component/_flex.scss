@@ -1,0 +1,94 @@
+@use "../setting/setting";
+
+.c-flex{
+  padding: 20px 0 40px;
+}
+
+.c-flex__heading{
+  span{
+    font-size: 14px;
+    color: setting.$color-main;
+    text-transform: uppercase;
+    font-family: setting.$font-en;
+    letter-spacing: 1px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+}
+
+.c-flex__text{
+  p{
+    padding-top: 12px;
+    line-height: 2;
+  }
+}
+
+.c-flex__img{
+  height: 250px;
+
+  img{
+    height: 250px;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .c-flex__item + .c-flex__item{
+    padding-top: 24px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .c-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 60px;
+  }
+
+  .c-flex__item{
+    width: 48%;
+    height: 450px;
+
+    img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-flex{
+    padding: 60px 0 72px;
+  }
+  .c-flex__item{
+    width: 44%;
+  }
+
+  .c-flex__img{
+    width: 50%;
+    
+
+    img{
+      border-radius: 12px;
+    }
+  }
+
+
+.c-flex__heading{
+  h2{
+    font-size: 22px;
+  }
+}
+}
+
+.-reverse{
+  flex-direction: row-reverse;
+}
+
+.-alignCenter{
+  align-items: center;
+}

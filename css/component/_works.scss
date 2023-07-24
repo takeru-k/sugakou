@@ -1,0 +1,82 @@
+@use "../setting/setting";
+
+.c-works{
+  padding-top: 20px;
+}
+
+.c-works__item{
+  padding-bottom: 24px;
+
+  span{
+    font-size: 12px;
+    background-color: #eaeaea;
+    color: #808080;
+    padding: 2px 12px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 8px;
+  }
+
+  p{
+    font-size: 14px;
+    padding-top: 4px;
+  }
+}
+
+.c-works__img{
+  img{
+    height: 250px;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .c-works__item{
+    border-bottom: 1px solid #ddd;
+  }
+
+  .c-works__item:not(:first-child){
+    padding-top: 28px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .c-works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .c-works__item{
+    width: 48%;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-works{
+    
+    &:after{
+      content: '';
+      display: block;
+      width: 32%;
+    }
+  }
+  .c-works__item{
+    width: calc((100% - 60px) / 3);
+  }
+
+  .c-works__img{
+  img{
+    height: 300px;
+  }
+}
+
+}
