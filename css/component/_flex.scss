@@ -25,20 +25,6 @@
   }
 }
 
-.c-flex__img{
-  height: 250px;
-
-  img{
-    height: 250px;
-  }
-}
-
-@media not all and (min-width: 768px){
-  .c-flex__item + .c-flex__item{
-    padding-top: 24px;
-  }
-}
-
 
 @media (min-width: 768px){
   .c-flex{
@@ -50,7 +36,6 @@
 
   .c-flex__item{
     width: 48%;
-    height: 450px;
 
     img{
       object-fit: cover;

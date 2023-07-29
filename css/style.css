@@ -575,18 +575,6 @@ img {
   line-height: 2;
 }
 
-.c-flex__img {
-  height: 250px;
-}
-.c-flex__img img {
-  height: 250px;
-}
-
-@media not all and (min-width: 768px) {
-  .c-flex__item + .c-flex__item {
-    padding-top: 24px;
-  }
-}
 @media (min-width: 768px) {
   .c-flex {
     display: flex;
@@ -596,7 +584,6 @@ img {
   }
   .c-flex__item {
     width: 48%;
-    height: 450px;
   }
   .c-flex__item img {
     -o-object-fit: cover;
@@ -1208,11 +1195,21 @@ img {
 .c-flow__list:before {
   background: #A99B8E;
   content: "";
-  height: 94%;
+  height: 83%;
   left: 0;
   position: absolute;
   top: calc(1.22449vw + 10.40816px);
   width: 2px;
+}
+@media (min-width: 768px) {
+  .c-flow__list:before {
+    height: 87%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-flow__list:before {
+    height: 87%;
+  }
 }
 
 .c-flow__item {
