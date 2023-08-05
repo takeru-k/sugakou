@@ -51,6 +51,11 @@
     padding: 2px 12px;
     margin-right: 8px;
     display: inline-block;
+      transition: .5s;
+
+  &:hover{
+    opacity: .6;
+  }
 }
 
 .c-post__thumbnail{
@@ -159,6 +164,11 @@
     font-weight: bold;
     color: setting.$color-link;
     text-decoration: underline;
+      transition: .5s;
+
+  &:hover{
+    opacity: .6;
+  }
   }
 
   table{

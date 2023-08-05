@@ -23,7 +23,7 @@
   p{
     writing-mode: vertical-rl;
     font-family: setting.$font-serif;
-    letter-spacing: .2em;
+    letter-spacing: .5em;
     line-height: 1.4;
     font-size: 24px;
     margin: 0 auto;
@@ -73,6 +73,7 @@
 
     p{
       padding-top: 12px;
+      line-height: 2;
     }
 }
 

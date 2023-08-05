@@ -55,6 +55,13 @@
   padding-top: 20px;
 }
 
+.p-topWorks__item{
+  transition: .5s;
+  &:hover{
+    opacity: .6;
+  }
+}
+
 @media (min-width: 768px){
   .p-topWorks{
     margin-top: 40px;
@@ -119,6 +126,10 @@
 .swiper-button-next {
   height: 50px;
   width: 50px;
+  
+  &:hover{
+    opacity: .6;
+  }
 }
  
 /* 矢印を消す、画像に変更 */

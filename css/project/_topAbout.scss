@@ -46,6 +46,11 @@
     &:first-child{
       border-top: 1px solid #DFDFDF;
     }
+
+      transition: .5s;
+  &:hover{
+    opacity: .6;
+  }
   }
 
   a{

@@ -32,6 +32,11 @@
     background: #fff;
     padding: 16px 20px;
     border: 1px solid #f1f2f4;
+      transition: .5s;
+
+  &:hover{
+    opacity: .6;
+  }
   }
 
 
