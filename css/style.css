@@ -154,7 +154,7 @@ img {
   text-transform: uppercase;
 }
 
-@media not all and (min-width: 1024px) {
+@media not all and (min-width: 1200px) {
   /* メニューのスタイリング */
   .l-header__nav {
     visibility: hidden;
@@ -213,7 +213,7 @@ img {
   }
 }
 /* 1024px以上のスタイリング */
-@media (min-width: 1024px) {
+@media (min-width: 1201px) {
   .l-header {
     height: auto;
     width: 100%;
@@ -554,7 +554,7 @@ img {
   transform: rotate(-45deg); /* したの線を傾ける */
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .c-hamburger {
     display: none;
   }
@@ -2749,9 +2749,12 @@ caption, th {
   opacity: 0.6;
 }
 
+.p-topBlog__item {
+  border-bottom: 1px solid #dddddd;
+}
+
 @media not all and (min-width: 768px) {
   .p-topBlog__item {
-    border-bottom: 1px solid #dddddd;
     padding-bottom: 16px;
   }
 }
@@ -2760,14 +2763,9 @@ caption, th {
     display: flex;
     justify-content: space-between;
   }
-  .p-topBlog__list {
-    display: flex;
-    width: 92%;
-    margin-bottom: 24px;
-  }
   .p-topBlog__heading {
     writing-mode: vertical-rl;
-    width: 4%;
+    width: 10%;
     padding-top: 20px;
   }
   .p-topBlog__heading span {
@@ -2776,8 +2774,15 @@ caption, th {
   .p-topBlog__heading h2 {
     font-size: 22px;
   }
+  .p-topBlog__list {
+    width: 84%;
+    margin-left: 60px;
+    background: #fff;
+    padding: 40px 120px 80px;
+  }
   .p-topBlog__item {
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1024px) {
