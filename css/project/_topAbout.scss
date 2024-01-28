@@ -7,30 +7,21 @@
 
 .p-topAbout__heading{
   span{
-    display: block;
+    font-size: 14px;
     color: setting.$color-main;
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bold;
     font-family: setting.$font-en;
     letter-spacing: 1px;
   }
 
   h2{
-    font-size: 16px;
-  }
-
-  p{
     font-size: 20px;
-    padding-top: 12px;
   }
 }
 
 .p-topAbout__text{
   p{
     padding-top: 12px;
-    line-height: 2;
-    font-size: 14px;
   }
 }
 
@@ -41,16 +32,16 @@
     border-bottom: 1px solid #DFDFDF;
     padding-left: 16px;
     color: setting.$color-main;
-
+    transition: .5s;
 
     &:first-child{
       border-top: 1px solid #DFDFDF;
     }
 
-      transition: .5s;
-  &:hover{
-    opacity: .6;
-  }
+    
+    &:hover{
+      opacity: .6;
+    }
   }
 
   a{
@@ -63,7 +54,7 @@
       content: "";
       width: 20px;
       height: 20px;
-      background: url(../images/icon/icon-triangle.svg) no-repeat center
+      background: url(../images/common/icon-triangle.svg) no-repeat center
         center/cover;
       right: 0;
       top: 50%;

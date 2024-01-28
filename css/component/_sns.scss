@@ -15,12 +15,6 @@
   padding-top: 20px;
   transition: .4s;
 
-  p{
-    font-size: 12px;
-    padding: 6px 0 0 2px;
-    line-height: 1.5;
-  }
-
   &:hover{
     opacity: .6;
   }
@@ -32,5 +26,6 @@
   }
   .c-sns__item{
     width: 22%;
+    padding-top: 0;
   }
 }

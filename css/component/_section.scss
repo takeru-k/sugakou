@@ -1,6 +1,7 @@
 @use "../setting/setting";
 .c-section{
   padding: 40px 0;
+  overflow: hidden;
 }
 
 .c-section + .c-section{
@@ -15,7 +16,7 @@
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 14px;
     font-family: setting.$font-en;
     letter-spacing: 1px;
   }
@@ -23,7 +24,7 @@
   h2{
     position: relative;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
   }  
 }
 
@@ -35,10 +36,10 @@
   .c-section__heading{
 
   span{
-    font-size: 32px;
+    font-size: 16px;
   }
   h2{
-    font-size: 20px;
+    font-size: 24px;
   }  
 }
 }

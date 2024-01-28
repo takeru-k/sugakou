@@ -14,8 +14,8 @@
 
   span{
     font-size: 12px;
-    background-color: #eaeaea;
-    color: #808080;
+    background-color: setting.$color-sub;
+    color: setting.$color-main;
     padding: 2px 12px;
     margin-right: 8px;
     display: inline-block;
@@ -24,7 +24,6 @@
 
   h3{
     font-size: 18px;
-    font-weight: normal;
     padding-top: 8px;
   }
 
@@ -36,7 +35,7 @@
 
 .c-works__img{
   img{
-    height: 250px;
+    height: 240px;
   }
 }
 
@@ -77,11 +76,4 @@
   .c-works__item{
     width: calc((100% - 60px) / 3);
   }
-
-  .c-works__img{
-  img{
-    height: 300px;
-  }
-}
-
 }

@@ -1,7 +1,6 @@
 @use "../setting/setting";
 
 .l-footer{
-  border-top: 1px solid #dddddd;
   padding: 28px 0 12px;
   background: #A99B8E;
   color: #eee;
@@ -9,28 +8,22 @@
 
 .l-footer__info{
   h1{
-    width: 200px;
+    width: 240px;
+
     img{
       object-fit: cover;
     }
-  }
-
-  ul{
-    padding-top: 16px;
-    font-size: 14px;
   }
 }
 
 .l-footer__pana{
   padding-top: 8px;
-  display: flex;
-  
 
   img{
     display: block;
     object-fit: cover;
     margin-top: 8px;
-    max-width: 108px;
+    width: 240px;
     height: 100%;
   }
 }
@@ -41,13 +34,9 @@
   margin-left: 8px;
   
   p{
-    padding-left:1em;
-	text-indent:-1em;
-  color: #dadada;
-  margin-bottom: 8px;
+    color: #eee;
   }
 }
-
 
 .l-footer__copy{
   text-align: right;
@@ -60,19 +49,18 @@
   .l-footer__menu{
     padding-top: 16px;
     
-
     li{
       position: relative;
       padding-left: 18px;
       margin-bottom: 16px;
-
+      font-size: 14px;
 
       &:before {
         position: absolute;
         content: "";
         width: 8px;
         height: 16px;
-        background: url(../images/icon/icon-arrow-white.svg) no-repeat center
+        background: url(../images/footer/icon-arrow-white.svg) no-repeat center
           center/cover;
         left: 0;
         top: 50%;
@@ -84,6 +72,7 @@
   .l-footer__copy{
     margin-top: 40px;
     text-align: center;
+    letter-spacing: 1px;
   }
 }
 
@@ -106,9 +95,9 @@
 
   .l-footer__info{
     padding-top: 0;
-
-    li{
-      padding-bottom: 8px;
+    h1{
+      width: 300px;
+      margin-top: -28px;
     }
   }
 
@@ -126,18 +115,18 @@
       writing-mode: vertical-rl;
       letter-spacing: 4px;
       position: relative;
-              transition: .5s;
-  &:hover{
-    opacity: .6;
-  }
+      transition: .5s;
 
+      &:hover{
+        opacity: .6;
+      }
 
       &:before {
         position: absolute;
         content: "";
         width: 8px;
         height: 16px;
-        background: url(../images/icon/icon-arrow-down.svg) no-repeat center
+        background: url(../images/footer/icon-arrow-down.svg) no-repeat center
           center/cover;
         top: 0;
         left: 50%;
@@ -147,10 +136,10 @@
   }
 
   .l-footer__pana{
-    max-width: 360px;
+    margin-top: 40px;
 
     img{
-      width: 88px;
+      width: 240px;
     }
   }
 }

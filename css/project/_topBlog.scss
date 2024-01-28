@@ -1,71 +1,58 @@
 @use "../setting/setting";
 
 .p-topBlog{
-  background: setting.$color-accent2;
+  background: setting.$color-sub;
   padding: 40px 0;
 }
 
 .p-topBlog__heading{
-  line-height: 1.4;
 
   span{
+    font-size: 14px;
     color: setting.$color-main;
     text-transform: uppercase;
-    display: block;
-    font-weight: bold;
-    font-size: 24px;
     font-family: setting.$font-en;
     letter-spacing: 1px;
+    margin-bottom: 4px;
   }
 
   h2{
-    position: relative;
-    font-size: 18px;
+    letter-spacing: 2px;
   }  
 }
 
 
 .p-topBlog__meta{
-
-  span{
-    font-size: 12px;
-    background-color: #eaeaea;
-    color: #808080;
-    padding: 2px 12px;
-    margin-right: 8px;
-    display: inline-block;
-    margin-top: 12px
-  }
-
   time{
-    font-size: 12px;
-    padding-left: 8px;
+    font-size: 14px;
     color: #808080;
-    border-left: solid 1px #808080;
+
   }
 }
 
-.p-topBlog__item{
-  padding-top: 20px;
-  h3{
-    font-size: 18px;
-    padding-top: 8px;
+  .p-topBlog__list{
+     background: #fff;
+     padding: 0 16px 20px;
+     margin-top: 24px;
   }
 
-    transition: .5s;
+
+.p-topBlog__item{
+  padding-top: 20px;
+  transition: .5s;
+  padding-bottom: 8px;
+
+  h3{
+    font-size: 16px;
+  }
+
   &:hover{
     opacity: .6;
   }
 }
 
-  .p-topBlog__item{
-    border-bottom: 1px solid #dddddd;
-  }
-
-@media not all and (min-width: 768px){
-  .p-topBlog__item{
-    padding-bottom: 16px;
-  }
+.p-topBlog__item{
+  border-bottom: 1px solid #dddddd;
 }
 
 @media (min-width: 768px){
@@ -83,7 +70,7 @@
       font-size: 16px;
     }
     h2{
-      font-size: 22px;
+      font-size: 24px;
     }  
   }
 
@@ -91,7 +78,7 @@
     width: 84%;
     margin-left: 60px;
     background: #fff;
-    padding: 40px 120px 80px;
+    padding: 40px 120px 40px;
   }
 
   .p-topBlog__item{
